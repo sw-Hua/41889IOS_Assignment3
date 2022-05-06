@@ -5,8 +5,8 @@ Faculty of Engineering and Information Technology School of Computer Science
 ### Assessment Task 3
 
 Group project: Design and develop an application
- Due date: 22 May 2022, 11:59 pm
- This project is worth 30% of the overall mark for this subject.
+Due date: 22 May 2022, 11:59 pm
+This project is worth 30% of the overall mark for this subject.
 
 ### Introduction
 
@@ -26,7 +26,7 @@ You will create an application that solves a real-world problem for a fictional 
 
 15 marks: assessment of your groupwork and review of your code design 15 marks: Final presentation
 
-Late submission
+### Late submission
 
 Because of the group nature of this project and the semester teaching schedule, no extensions or special consideration will be considered. The due date is final.
 
