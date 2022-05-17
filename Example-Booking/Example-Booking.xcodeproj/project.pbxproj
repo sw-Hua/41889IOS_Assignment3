@@ -14,6 +14,7 @@
 		E275760A282D09F100609541 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2757609282D09F100609541 /* Home.swift */; };
 		E2AF28D5282FB15500E24301 /* restaurantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF28D4282FB15500E24301 /* restaurantInfo.swift */; };
 		E2AF28D728300CA400E24301 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF28D628300CA400E24301 /* Booking.swift */; };
+		E2C647EA28339BFA00CA61F6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C647E928339BFA00CA61F6 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E2757609282D09F100609541 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E2AF28D4282FB15500E24301 /* restaurantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantInfo.swift; sourceTree = "<group>"; };
 		E2AF28D628300CA400E24301 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		E2C647E928339BFA00CA61F6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E2757609282D09F100609541 /* Home.swift */,
 				E2AF28D4282FB15500E24301 /* restaurantInfo.swift */,
 				E2AF28D628300CA400E24301 /* Booking.swift */,
+				E2C647E928339BFA00CA61F6 /* Order.swift */,
 			);
 			path = "Example-Booking";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C647EA28339BFA00CA61F6 /* Order.swift in Sources */,
 				E2AF28D5282FB15500E24301 /* restaurantInfo.swift in Sources */,
 				E27575FE282D097C00609541 /* ContentView.swift in Sources */,
 				E275760A282D09F100609541 /* Home.swift in Sources */,

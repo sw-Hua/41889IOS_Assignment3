@@ -95,7 +95,7 @@ struct FootView:View{
     var body: some View{
         NavigationLink(destination: Booking(), label: {
             
-            Text("Buy Ticket ")
+            Text("Book Table")
                 .fontWeight(.bold)
                 .foregroundColor(.white).padding(.vertical)
                 .frame(width: getRect().width / 2)

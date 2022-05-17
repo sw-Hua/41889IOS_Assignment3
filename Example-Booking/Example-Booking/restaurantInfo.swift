@@ -13,3 +13,7 @@ var menu = ["Salade", "Ratatouille", "Cassoulet", "bourguignon", "Soufflé", "Fl
 
 var time = ["11:00", "11:45",
             "6:00", "6:45"]
+
+let array = [15, 33, 36, 723, 77, 4]
+
+
