@@ -7,24 +7,39 @@
 
 import SwiftUI
 
+
 struct Booking: View {
     
     @State var bookedTables: [Int] = [0, 5, 10]
     @State var selectedSelects : [Int] = []
     @State var date: Date = Date()
-    
     @State var selectedTime = "11:00"
+    @State var count = 0
+    @State var totalPrice = 0
+    
+
+    @State var info = UserDefaults.standard
+    
     
     var body: some View {
+    
         ScrollView(.vertical, showsIndicators: false, content: {
             // Text("Placeholder");
             // 滚动视图的可滚动轴。
             HStack{
-                Button (action: {
-                    print(123)
-                }, label: {
+//                Button (action: {
+//                    print(123)
+//                }, label: {
+//                    Image(systemName: "chevron.left").font(.title2).foregroundColor(.white )
+//                })
+                
+                
+                NavigationLink(destination: Home(), label: {
                     Image(systemName: "chevron.left").font(.title2).foregroundColor(.white )
                 })
+                
+                
+                
                 Spacer()
             }
             .overlay(
@@ -36,7 +51,7 @@ struct Booking: View {
             
             // let totalTables = 60
             let totalTables = 0..<12
-            Text("Maximum Select 3 Tables").font(.title3).foregroundColor(.white).fontWeight(.bold)
+            Text("Maximum Select 2 Tables").font(.title3).foregroundColor(.white).fontWeight(.bold)
             HStack(spacing: 30){
                 
                 let columns = Array(repeating: GridItem(.flexible(), spacing: 13), count: 3)
@@ -58,11 +73,20 @@ struct Booking: View {
                                 return
                             }
                             
-                            if (selectedSelects.count <= 2){
+                            if (selectedSelects.count <= 1){
                                 //adding...
                                 selectedSelects.append(table)
                             
                                 print(table)
+                                UserDefaults.standard.set(table, forKey: "selectedTable\(count)")
+                                print(selectedSelects)
+                                
+                                count+=1;
+                                totalPrice = count * 30
+                                UserDefaults.standard.set("\(totalPrice)", forKey: "totalPrice")
+                                
+                                
+                               
                             }
                             
                             
@@ -104,7 +128,9 @@ struct Booking: View {
                 
                 Spacer()
                 
-                DatePicker("", selection: $date, displayedComponents: .date).background(.white).cornerRadius(10).font(.title3).frame(width: 130).shadow(color: Color.white, radius: 5, x: 0, y: 0).foregroundColor(.white)
+                DatePicker("", selection: $date, displayedComponents: .date).background(.white).cornerRadius(10).font(.title3).frame(width: 130).shadow(color: Color.white, radius: 5, x: 0, y: 0).foregroundColor(.gray)
+                
+
                 
             }.padding().padding(.top)
             
@@ -117,14 +143,25 @@ struct Booking: View {
                     ScrollView(.horizontal, showsIndicators: false, content: {
                         HStack(spacing: 15){
                             ForEach(time, id:\ .self){timing in
-                                Text(timing).fontWeight(.bold).foregroundColor(selectedTime == timing ? Color.blue: Color.white).padding(.vertical, 15).padding(.horizontal, 40).background(Color.white.opacity(selectedTime == timing ? 1: 0.2)).cornerRadius(20).onTapGesture {
+                                Text(timing)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(selectedTime == timing ? Color.blue: Color.white)
+                                    .padding(.vertical, 15).padding(.horizontal, 40).background(Color.white.opacity(selectedTime == timing ? 1: 0.2)).cornerRadius(20).onTapGesture {
                                     selectedTime = timing
+                                    print(timing)
+                                        
+                                    
+//                                        Text("Date is \(date.formatted(date: .long, time: .omitted))")
+                                        
+                                    UserDefaults.standard.set("\(date.formatted(date: .long, time: .omitted))", forKey: "Date")
+                                        
+                                    UserDefaults.standard.set(timing, forKey: "selectedTiming")
                                 }
                             }
                         }.padding(.horizontal).padding(10)
                         
                     })
-                }.background(Color.black).cornerRadius(10).opacity(0.8)
+                }.background(Color.gray.opacity(0.8)).cornerRadius(10).opacity(0.8)
                            
             }.padding()
             
@@ -135,7 +172,6 @@ struct Booking: View {
                     .font(.caption)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    
                     Text("per $30")
                     .font(.caption)
                     .fontWeight(.bold)
@@ -147,20 +183,37 @@ struct Booking: View {
                     .foregroundColor(.yellow)
                 }).frame(width: 100)
                 
+                
+
+
+                
+                
+                NavigationLink(destination: Order(), label: {
+                    Text("Book Now").fontWeight(.bold).foregroundColor(.white).padding(.vertical).frame(maxWidth: .infinity)
+                }).background(.black.opacity(0.8)).cornerRadius(20).padding()
+                
+                
+            }.padding()
+            
+            HStack{
                 Button(action: {
                     print(selectedSelects)
                 }, label: {
                     Text("Book Now").fontWeight(.bold).foregroundColor(.white).padding(.vertical).frame(maxWidth: .infinity)
-                }).background(.blue).cornerRadius(20)
-            }.padding()
-            
+                })
+            }
             
 
             
         })
+        
+
             .background(Color.indigo.ignoresSafeArea())
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+        
+        
+        
     }
 }
 
