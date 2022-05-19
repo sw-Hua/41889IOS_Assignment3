@@ -14,17 +14,24 @@ struct Home: View {
                     Section(footer: FootView(), content: {
                         
                         HStack{
-                        Button(action: {}, label:{
-                            Image(systemName: "chevron.left").font(.title2)
-                        })
+                            NavigationLink(destination: Firstpage(), label: {
+                                
+                                Image(systemName: "chevron.left").font(.title2).foregroundColor(.white )
+                            })
                         
                         // Text("Hello")
                         Spacer()
                     
                         
                     
-                        Button(action: {}, label:{
-                            Image(systemName: "bookmark").font(.title2)
+//                        Button(action: {}, label:{
+//                            Image(systemName: "note").font(.title2)
+//                            })
+                            
+                            NavigationLink(destination: {
+                                Profile()
+                            }, label: {
+                                Image(systemName: "person").font(.title2)
                             })
                         }
                         .overlay(
@@ -32,6 +39,10 @@ struct Home: View {
                         )
                         .padding()
                         .foregroundColor(.white)
+                        
+                        
+                       
+                        
                         
                         ZStack{
                             // A view that overlays its children, aligning them in both axes.一个覆盖其子代的视图，在两个轴上对齐它们。
@@ -95,7 +106,7 @@ struct FootView:View{
     var body: some View{
         NavigationLink(destination: Booking(), label: {
             
-            Text("Book Table")
+            Text("Book Tables ")
                 .fontWeight(.bold)
                 .foregroundColor(.white).padding(.vertical)
                 .frame(width: getRect().width / 2)

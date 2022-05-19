@@ -188,7 +188,7 @@ struct Booking: View {
 
                 
                 
-                NavigationLink(destination: Order(), label: {
+                NavigationLink(destination: Order(url: storeUrl), label: {
                     Text("Book Now").fontWeight(.bold).foregroundColor(.white).padding(.vertical).frame(maxWidth: .infinity)
                 }).background(.black.opacity(0.8)).cornerRadius(20).padding()
                 
