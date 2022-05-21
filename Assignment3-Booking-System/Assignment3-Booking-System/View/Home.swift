@@ -2,7 +2,7 @@
 //  Home.swift
 //  Booking-System
 //
-//  Created by Qingqing Dong on 2022/5/20.
+//  Created by Qingqing Dong on 2022/5/19.
 //
 
 import SwiftUI
@@ -20,14 +20,10 @@ struct Home: View {
                                 Image(systemName: "chevron.left").font(.title2).foregroundColor(.white )
                             })
                         
-                        // Text("Hello")
+              
                         Spacer()
                     
-                        
-                    
-//                        Button(action: {}, label:{
-//                            Image(systemName: "note").font(.title2)
-//                            })
+                 
                             
                             NavigationLink(destination: {
                                 Profile()
@@ -46,7 +42,7 @@ struct Home: View {
                         
                         
                         ZStack{
-                            // A view that overlays its children, aligning them in both axes.一个覆盖其子代的视图，在两个轴上对齐它们。
+                            // A view that overlays its children, aligning them in both axes.
                             // Bottom Shadows ....
                             
                             RoundedRectangle(cornerRadius: 15).fill(Color.white.opacity(0.2)).padding(.horizontal).offset(y: 14)
@@ -61,7 +57,7 @@ struct Home: View {
                             Text("L'arome  Restaurant").font(.title2).fontWeight(.bold).foregroundColor(.white)
                             
                             Text("Contact Number: 0448300023").foregroundColor(.white)
-                            // “自适应”将在给定的最小空间内放置一行中可能的视图数。。。。
+                            //
                             
                             Text("Menu:").font(.title3).fontWeight(.bold).foregroundColor(.white)
                             
@@ -119,8 +115,7 @@ struct FootView:View{
     var body: some View{
         NavigationLink(destination: Booking(), label: {
             
-            Text("Book Tables ")
-                .fontWeight(.bold)
+            Text("Book Tables ").fontWeight(.bold)
                 .foregroundColor(.white).padding(.vertical)
                 .frame(width: getRect().width / 2)
                 .background(Color.black).cornerRadius(30)
