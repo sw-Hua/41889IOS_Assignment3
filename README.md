@@ -1,4 +1,4 @@
-### Describe
+### Description
 Our app is designed to help users reserve seats in restaurants. To help restaurants improve their user experience.
 
 ### Student Name/ID
