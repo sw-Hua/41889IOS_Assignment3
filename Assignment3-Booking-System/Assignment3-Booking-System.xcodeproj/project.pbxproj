@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E26F1D442839077E00D6923B /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F1D432839077E00D6923B /* Unit.swift */; };
+		E286606728378F990094081D /* Assignment3_Booking_SystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286606628378F990094081D /* Assignment3_Booking_SystemApp.swift */; };
+		E286606928378F990094081D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286606828378F990094081D /* ContentView.swift */; };
+		E286606B28378F9A0094081D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E286606A28378F9A0094081D /* Assets.xcassets */; };
+		E286606E28378F9A0094081D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E286606D28378F9A0094081D /* Preview Assets.xcassets */; };
+		E286607728378FFF0094081D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286607628378FFF0094081D /* Home.swift */; };
+		E2866079283790160094081D /* Firstpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2866078283790160094081D /* Firstpage.swift */; };
+		E286607B283790490094081D /* restruantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286607A283790490094081D /* restruantInfo.swift */; };
+		E286607F2837906F0094081D /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286607E2837906F0094081D /* Booking.swift */; };
+		E2866081283790800094081D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2866080283790800094081D /* Order.swift */; };
+		E2866083283790910094081D /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2866082283790910094081D /* OrderList.swift */; };
+		E2866085283790A50094081D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2866084283790A50094081D /* Profile.swift */; };
+		E2866087283790BC0094081D /* updateProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2866086283790BC0094081D /* updateProfile.swift */; };
+		E2866089283790D40094081D /* CustomerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2866088283790D40094081D /* CustomerInfo.swift */; };
+		E286608B283790FA0094081D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E286608A283790FA0094081D /* data.json */; };
+		E286608E283791170094081D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286608D283791170094081D /* Model.swift */; };
+		E2866090283791340094081D /* fileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286608F283791340094081D /* fileService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E26F1D432839077E00D6923B /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		E286606328378F990094081D /* Assignment3-Booking-System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment3-Booking-System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E286606628378F990094081D /* Assignment3_Booking_SystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3_Booking_SystemApp.swift; sourceTree = "<group>"; };
+		E286606828378F990094081D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E286606A28378F9A0094081D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E286606D28378F9A0094081D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E286607628378FFF0094081D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E2866078283790160094081D /* Firstpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firstpage.swift; sourceTree = "<group>"; };
+		E286607A283790490094081D /* restruantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restruantInfo.swift; sourceTree = "<group>"; };
+		E286607E2837906F0094081D /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		E2866080283790800094081D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		E2866082283790910094081D /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
+		E2866084283790A50094081D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		E2866086283790BC0094081D /* updateProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateProfile.swift; sourceTree = "<group>"; };
+		E2866088283790D40094081D /* CustomerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfo.swift; sourceTree = "<group>"; };
+		E286608A283790FA0094081D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		E286608D283791170094081D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E286608F283791340094081D /* fileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E286606028378F990094081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E26F1D3E2839004D00D6923B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2866078283790160094081D /* Firstpage.swift */,
+				E286607E2837906F0094081D /* Booking.swift */,
+				E2866084283790A50094081D /* Profile.swift */,
+				E2866086283790BC0094081D /* updateProfile.swift */,
+				E286607628378FFF0094081D /* Home.swift */,
+				E2866080283790800094081D /* Order.swift */,
+				E2866082283790910094081D /* OrderList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E26F1D3F2839005D00D6923B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E286608D283791170094081D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E26F1D412839009E00D6923B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E286608A283790FA0094081D /* data.json */,
+				E2866088283790D40094081D /* CustomerInfo.swift */,
+				E286607A283790490094081D /* restruantInfo.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E26F1D42283900D900D6923B /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				E286608F283791340094081D /* fileService.swift */,
+				E26F1D432839077E00D6923B /* Unit.swift */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		E286605A28378F990094081D = {
+			isa = PBXGroup;
+			children = (
+				E286606528378F990094081D /* Assignment3-Booking-System */,
+				E286606428378F990094081D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E286606428378F990094081D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E286606328378F990094081D /* Assignment3-Booking-System.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E286606528378F990094081D /* Assignment3-Booking-System */ = {
+			isa = PBXGroup;
+			children = (
+				E26F1D3F2839005D00D6923B /* Model */,
+				E26F1D412839009E00D6923B /* Data */,
+				E26F1D42283900D900D6923B /* Units */,
+				E26F1D3E2839004D00D6923B /* View */,
+				E286606628378F990094081D /* Assignment3_Booking_SystemApp.swift */,
+				E286606828378F990094081D /* ContentView.swift */,
+				E286606A28378F9A0094081D /* Assets.xcassets */,
+				E286606C28378F9A0094081D /* Preview Content */,
+			);
+			path = "Assignment3-Booking-System";
+			sourceTree = "<group>";
+		};
+		E286606C28378F9A0094081D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E286606D28378F9A0094081D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E286606228378F990094081D /* Assignment3-Booking-System */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E286607128378F9A0094081D /* Build configuration list for PBXNativeTarget "Assignment3-Booking-System" */;
+			buildPhases = (
+				E286605F28378F990094081D /* Sources */,
+				E286606028378F990094081D /* Frameworks */,
+				E286606128378F990094081D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment3-Booking-System";
+			productName = "Assignment3-Booking-System";
+			productReference = E286606328378F990094081D /* Assignment3-Booking-System.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E286605B28378F990094081D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E286606228378F990094081D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E286605E28378F990094081D /* Build configuration list for PBXProject "Assignment3-Booking-System" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E286605A28378F990094081D;
+			productRefGroup = E286606428378F990094081D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E286606228378F990094081D /* Assignment3-Booking-System */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E286606128378F990094081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E286606E28378F9A0094081D /* Preview Assets.xcassets in Resources */,
+				E286608B283790FA0094081D /* data.json in Resources */,
+				E286606B28378F9A0094081D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E286605F28378F990094081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E286606928378F990094081D /* ContentView.swift in Sources */,
+				E286607F2837906F0094081D /* Booking.swift in Sources */,
+				E2866089283790D40094081D /* CustomerInfo.swift in Sources */,
+				E26F1D442839077E00D6923B /* Unit.swift in Sources */,
+				E286608E283791170094081D /* Model.swift in Sources */,
+				E2866083283790910094081D /* OrderList.swift in Sources */,
+				E2866090283791340094081D /* fileService.swift in Sources */,
+				E286606728378F990094081D /* Assignment3_Booking_SystemApp.swift in Sources */,
+				E286607B283790490094081D /* restruantInfo.swift in Sources */,
+				E286607728378FFF0094081D /* Home.swift in Sources */,
+				E2866079283790160094081D /* Firstpage.swift in Sources */,
+				E2866085283790A50094081D /* Profile.swift in Sources */,
+				E2866087283790BC0094081D /* updateProfile.swift in Sources */,
+				E2866081283790800094081D /* Order.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E286606F28378F9A0094081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E286607028378F9A0094081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E286607228378F9A0094081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Assignment3-Booking-System/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.edu.uts.Assignment3-Booking-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E286607328378F9A0094081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Assignment3-Booking-System/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.edu.uts.Assignment3-Booking-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E286605E28378F990094081D /* Build configuration list for PBXProject "Assignment3-Booking-System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E286606F28378F9A0094081D /* Debug */,
+				E286607028378F9A0094081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E286607128378F9A0094081D /* Build configuration list for PBXNativeTarget "Assignment3-Booking-System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E286607228378F9A0094081D /* Debug */,
+				E286607328378F9A0094081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E286605B28378F990094081D /* Project object */;
+}
